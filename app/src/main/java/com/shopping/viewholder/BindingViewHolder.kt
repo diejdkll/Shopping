@@ -2,6 +2,7 @@ package com.shopping.viewholder
 
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
+import com.shopping.BR
 import com.shopping.model.ListItem
 
 abstract class BindingViewHolder<VB : ViewDataBinding>(

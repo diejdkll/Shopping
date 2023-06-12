@@ -1,6 +1,6 @@
 package com.shopping.di
 
-import com.shopping.MainService
+import com.shopping.remote.MainService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

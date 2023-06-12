@@ -1,6 +1,8 @@
 package com.shopping.di
 
 import com.google.gson.GsonBuilder
+import com.shopping.model.ListItem
+import com.shopping.remote.ListItemDeserializer
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -20,6 +22,7 @@ object RetrofitModule {
     fun providesConverterFactory() : GsonConverterFactory {
         return GsonConverterFactory.create(
             GsonBuilder()
+                .registerTypeAdapter(ListItem::class.java, ListItemDeserializer())
                 .create()
         )
     }

@@ -10,7 +10,7 @@ import java.lang.reflect.Type
 class ListItemDeserializer : JsonDeserializer<ListItem> {
     override fun deserialize(
         json: JsonElement,
-        typeOfT: Type?,
+        typeOfT: Type,
         context: JsonDeserializationContext
     ): ListItem {
 

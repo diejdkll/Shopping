@@ -1,7 +1,9 @@
 package com.shopping.model
 
+import com.google.gson.annotations.SerializedName
+
 data class Image(
-    val imageUrl: String
+    @SerializedName("imageUrl") val imageUrl : String
 ) : ListItem {
     override val viewType: ViewType
         get() = ViewType.IMAGE

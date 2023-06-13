@@ -1,9 +1,11 @@
 package com.shopping.model
 
+import com.google.gson.annotations.SerializedName
+
 data class FullAd(
-    val title: String,
-    val imageUrl: String,
-    val button: String ?= null
+    @SerializedName("title") val title: String,
+    @SerializedName("imageUrl") val imageUrl: String,
+    @SerializedName("button") val button: String?=null,
 ) : ListItem {
     override val viewType: ViewType
         get() = ViewType.FULL_AD

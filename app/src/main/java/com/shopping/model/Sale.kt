@@ -1,10 +1,12 @@
 package com.shopping.model
 
+import com.google.gson.annotations.SerializedName
+
 data class Sale(
-    val imageUrl: String,
-    val sale: String,
-    val name: String,
-    val badge: String ?= null
+    @SerializedName("imageUrl") val imageUrl : String,
+    @SerializedName("sale") val sale : String,
+    @SerializedName("name") val name : String,
+    @SerializedName("badge") val badge : String? = null,
 ) : ListItem {
     override val viewType: ViewType
         get() = ViewType.SALE

@@ -18,7 +18,7 @@ object ViewHolderGenerator {
             ViewType.FULL_AD.ordinal -> FullAdViewHolder(parent.toBinding())
 
             ViewType.SALE.ordinal -> SaleViewHolder(parent.toBinding())
-            ViewType.COUPON.ordinal -> SaleViewHolder(parent.toBinding())
+            ViewType.COUPON.ordinal -> CouponViewHolder(parent.toBinding())
             ViewType.IMAGE.ordinal -> ImageViewHolder(parent.toBinding())
             ViewType.SELL_ITEM.ordinal -> SellItemViewHolder(parent.toBinding())
 

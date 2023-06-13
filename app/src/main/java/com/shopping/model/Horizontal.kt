@@ -1,8 +1,10 @@
 package com.shopping.model
 
+import com.google.gson.annotations.SerializedName
+
 data class Horizontal(
-    val title: String,
-    val items: List<ListItem>
+    @SerializedName("title") val title: String,
+    @SerializedName("items") val items: List<ListItem>
 ) : ListItem {
     override val viewType: ViewType
         get() = ViewType.HORIZONTAL
